@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Calculadora">
+        <input type="text" id="pantalla" readonly>
+        <div class="teclas">
+            <button onclick="limpiar()" class="btn-clear">C</button>
+            <button onclick="agregar('/')" class="btn-op">/</button>
+            <button onclick="agregar('*')" class="btn-op">*</button>
+            <button onclick="borrarUno()" class="btn-clear">Del</button>
+
+            <button onclick="agregar('7')" class="btn-num">7</button>
+            <button onclick="agregar('8')" class="btn-num">8</button>
+            <button onclick="agregar('9')" class="btn-num">9</button>
+            <button onclick="agregar('-')" class="btn-op">-</button>
+
+            <button onclick="agregar('4')" class="btn-num">4</button>
+            <button onclick="agregar('5')" class="btn-num">5</button>
+            <button onclick="agregar('6')" class="btn-num">6</button>
+            <button onclick="agregar('+')" class="btn-op">+</button>
+
+            <button onclick="agregar('1')" class="btn-num">1</button>
+            <button onclick="agregar('2')" class="btn-num">2</button>
+            <button onclick="agregar('3')" class="btn-num">3</button>
+            <button onclick="calcular()" class="igual">=</button>
+
+            <button onclick="raiz()" class="btn-op">√</button>
+            <button onclick="potencia()" class="btn-op">x²</button>
+            <button onclick="porcentaje()" class="btn-op">%</button>
+
+            <button onclick="agregar('0')" class="cero btn-num">0</button>
+            <button onclick="agregar('.')" class="btn-num">.</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
